@@ -11,6 +11,15 @@ const legalIcon = new Icon({
 
 const points: { latitude: number, longitude: number, text: string }[] = [
   { latitude: -22.68882484078866, longitude: -47.6328992843628, text: 'Ponto 1' },
+  { latitude: -22.6880, longitude: -47.6334, text: 'Ponto 1' },
+  { latitude: -22.6870, longitude: -47.6334, text: 'Ponto 1' },
+  { latitude: -22.6860, longitude: -47.6334, text: 'Ponto 1' },
+  { latitude: -22.6850, longitude: -47.6334, text: 'Ponto 1' },
+  { latitude: -22.6840, longitude: -47.6336, text: 'Ponto 1' },
+  { latitude: -22.6830, longitude: -47.6335, text: 'Ponto 1' },
+  { latitude: -22.6820, longitude: -47.6338, text: 'Ponto 1' },
+  { latitude: -22.6810, longitude: -47.6342, text: 'Ponto 1' },
+  { latitude: -22.6800, longitude: -47.6338, text: 'Ponto 1' },
   { latitude: -22.685, longitude: -47.605, text: 'Ponto 2' },
 ]
 
