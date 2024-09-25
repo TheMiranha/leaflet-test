@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { MapContainer, Marker, Popup, SVGOverlay, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
