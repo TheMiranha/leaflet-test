@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { MapContainer, Marker, Popup, SVGOverlay, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 const points: { latitude: number, longitude: number, text: string }[] = [
@@ -27,16 +27,6 @@ const ExemploDeMapa = () => {
             </Marker>
           ))
         }
-
-        <SVGOverlay attributes={{ stroke: 'red' }} bounds={[[points[0].latitude, points[0].longitude], [points[0].latitude + 0.005, points[0].longitude + 0.005]]}>
-          <rect x="0" y="0" width="100%" height="100%" fill="#FEFEFE" />
-          <text x="20%" y="50%" stroke="black">
-            Literalmente qualquer coisa
-            {/* pode ser um ícone */}
-            {/* pode ser um componente inteiro */}
-            {/* realmente qualquer coisa */}
-          </text>
-        </SVGOverlay>
 
       </MapContainer>
     </div>
