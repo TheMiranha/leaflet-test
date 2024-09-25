@@ -1,6 +1,13 @@
 import { useRef } from "react";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import { Icon } from "leaflet";
+
+const legalIcon = new Icon({
+  iconUrl: 'Unicorn-3d-icon.png',
+  iconSize: [35, 35],
+  popupAnchor: [-3, -76],
+})
 
 const points: { latitude: number, longitude: number, text: string }[] = [
   { latitude: -22.68882484078866, longitude: -47.6328992843628, text: 'Ponto 1' },
@@ -20,7 +27,7 @@ const ExemploDeMapa = () => {
 
         {
           points.map(point => (
-            <Marker position={[point.latitude, point.longitude]} key={point.latitude + '-' + point.longitude}>
+            <Marker icon={legalIcon} position={[point.latitude, point.longitude]} key={point.latitude + '-' + point.longitude}>
               <Popup>
                 {point.text}
               </Popup>
